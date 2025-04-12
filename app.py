@@ -106,7 +106,7 @@ elif choice == "Login":
                     st.error("Too many failed attempts. Locked for 60 seconds")
                     st.stop()
 
-elif choice == "Store Data":
+elif choice == "Stored Data":
     if not st.session_state.authenticated_user:
         st.warning("Please login first")
 
