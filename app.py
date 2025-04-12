@@ -4,7 +4,7 @@ import json
 import os
 import time 
 from cryptography.fernet import Fernet
-from base64 import urlsafe_b64dencode
+from base64 import urlsafe_b64encode
 from hashlib import pbkdf2_hmac
 
 DATA_FILE = "secure_data.json"
