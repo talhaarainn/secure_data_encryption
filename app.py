@@ -109,7 +109,6 @@ elif choice == "Login":
 elif choice == "Store Data":
     if not st.session_state.authenticated_user:
         st.warning("Please login first")
-
     else:
         st.subheader("Store Encrypted Data")
         data = st.text_area("Enter Data to encrpt")
