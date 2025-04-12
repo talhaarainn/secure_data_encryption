@@ -33,7 +33,7 @@ def save_data(data):
 
 def generate_key(passkey):
     key = pbkdf2_hmac('sha256' , passkey.encode() , SALT , 100000)
-    return urlsafe_b64dencode(key)
+    return urlsafe_b64encode(key)
 
 def hash_password(password):
     return hashlib.pbkdf2_hmac('sha256' , password.encode() , SALT , 100000).hex()
