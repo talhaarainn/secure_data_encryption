@@ -80,7 +80,7 @@ elif choice == "Register":
         else:
             st.error("Both fields are required")
     
-    elif choice == "Login":
+elif choice == "Login":
         st.subheader("User Login🔑")
 
         if time.time() < st.session_state.lockout_time:
